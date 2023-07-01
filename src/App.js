@@ -1,19 +1,13 @@
-// import './App.css';
+import "./style.scss";
 import Login from './pages/login/Login'
 import Signup from './pages/signup/signup.js'
-import leftBar from "./components/leftBar/leftBar" 
-import Navbar from "./components/navBar/NavBar" 
-import rightBar from "./components/rightBar/rightBar" 
+import LeftBar from "./components/LeftBar/LeftBar" 
+import NavBar from './components/NavBar/NavBar'
+import RightBar from "./components/RightBar/RightBar" 
 import Home from './pages/home/home'
 import Profile from "./pages/profile/profile" 
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet,
-  Route,
-  Navigate
-} from 'react-router-dom'
+import * as reactRouterDom from 'react-router-dom'
 
 
 function App() {
@@ -23,12 +17,12 @@ function App() {
   const Layout=()=>{
     return(
       <div>
-        <Navbar/>
+        <NavBar/>
 
         <div style={{display: "flex"}}>
-          <leftBar/>
-          <Outlet/>
-          <rightBar/>
+          <LeftBar/>
+          <reactRouterDom.Outlet/>
+          <RightBar/>
         </div>
 
       </div>
@@ -37,13 +31,13 @@ function App() {
 
   const ProtectedRoute=({children})=>{
     if (!currentUser) {
-      return <Navigate to='/login'/>
+      return <reactRouterDom.Navigate to='/login'/>
     }
 
     return children
   }
 
-  const router=createBrowserRouter([
+  const router=reactRouterDom.createBrowserRouter([
     {
       path:'/',
       element: <ProtectedRoute><Layout/></ProtectedRoute>,
@@ -72,7 +66,7 @@ function App() {
   return (
     <div classNameName="App">
 
-      <RouterProvider router={router}/>
+      <reactRouterDom.RouterProvider router={router}/>
 
       
     </div>
