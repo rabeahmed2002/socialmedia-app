@@ -1,6 +1,7 @@
 import React from 'react'
 import './login.scss'
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 // import { AuthContext } from "../../context/authContext";
 // import "./login.scss";
@@ -23,10 +24,7 @@ const Login = () => {
             alias totam numquam ipsa exercitationem dignissimos, error nam,
             consequatur.
           </p>
-          <span>Don't you have an account?</span>
-          <Link to="/register">
-            <button>Register</button>
-          </Link>
+
         </div> */}
         
         <div className="right">
@@ -37,6 +35,10 @@ const Login = () => {
             {/* <button onClick={handleLogin}>Login</button> */}
             <button>Login</button>
           </form>
+          <span>Don't you have an account?</span>
+        <Link to="/signup">
+          <button>Register</button>
+        </Link>
         </div>
       </div>
     </div>
