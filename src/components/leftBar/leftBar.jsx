@@ -1,4 +1,20 @@
 import React from 'react'
+import "./leftbar.scss"
+
+import Friends from "../../assets/1.png";
+import Groups from "../../assets/2.png";
+import Market from "../../assets/3.png";
+import Watch from "../../assets/4.png";
+import Memories from "../../assets/5.png";
+import Events from "../../assets/6.png";
+import Gaming from "../../assets/7.png";
+import Gallery from "../../assets/8.png";
+import Videos from "../../assets/9.png";
+import Messages from "../../assets/10.png";
+import Tutorials from "../../assets/11.png";
+import Courses from "../../assets/12.png";
+import Fund from "../../assets/13.png";
+import { Group } from '@mui/icons-material';
 
 const leftBar = () => {
   return (
@@ -6,8 +22,37 @@ const leftBar = () => {
         <div className='container'>
           <div className='menu'>
             <div className='user'>
-              
+              <img src=''/>
+              <span>Rabe</span>
             </div>
+
+            <div className='items'>
+              <img src={Friends}/>
+              <span>Friends</span>
+            </div>
+            
+
+            <div className='items'>
+              <img src={Groups}/>
+              <span>Groups</span>
+            </div>
+
+            <div className='items'>
+              <img src={Market}/>
+              <span>Marketplace</span>
+            </div>
+
+            <div className='items'>
+              <img src={Watch}/>
+              <span>Watch</span>
+            </div>
+
+
+            <div className='items'>
+              <img src={Memories}/>
+              <span>Memories</span>
+            </div>
+
           </div>
         </div>
     </div>
