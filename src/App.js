@@ -7,6 +7,14 @@ import RightBar from "./components/RightBar/RightBar"
 import Home from './pages/home/home'
 import Profile from "./pages/profile/profile" 
 
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Outlet,
+  Navigate,
+} from "react-router-dom";
+
 import * as reactRouterDom from 'react-router-dom'
 
 
@@ -21,7 +29,10 @@ function App() {
 
         <div style={{display: "flex"}}>
           <LeftBar/>
-          <reactRouterDom.Outlet/>
+          <div style={{flex:6}}>
+            <Outlet/>
+          </div>
+          {/* <reactRouterDom.Outlet/> */}
           <RightBar/>
         </div>
 
@@ -64,7 +75,7 @@ function App() {
 
 
   return (
-    <div classNameName="App">
+    <div className="App">
 
       <reactRouterDom.RouterProvider router={router}/>
 
