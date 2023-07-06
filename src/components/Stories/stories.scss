@@ -23,9 +23,6 @@
       left: 10px;
       color: white;
       font-weight: 500;
-      @include mobile {
-        display: none;
-      }
     }
 
     button {

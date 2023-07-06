@@ -1,7 +1,7 @@
 import React from 'react'
 import './home.scss'
 
-import Stories from "../../components/Stories/stories.jsx"
+import Stories from "../../components/Stories/Stories"
 import Posts from "../../components/Posts/posts.jsx"
 
 
