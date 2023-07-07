@@ -1,6 +1,9 @@
 import "./navbar.scss";
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Context/authContext";
+
+
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import AppsOutlinedIcon from '@mui/icons-material/AppsOutlined';
@@ -11,7 +14,11 @@ import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNone
 
 
 
-const navBar = () => {
+
+const NavBar = () => {
+
+    const {currentUser}=useContext(AuthContext)
+
   return (
     <div className='navbar'>
 
@@ -34,8 +41,8 @@ const navBar = () => {
             <NotificationsNoneOutlinedIcon/>
 
             <div className='user'>
-                <img src=''/>
-                <span>Rabe</span>
+                <img src={currentUser.profilePicture}/>
+                <span>{currentUser.name}</span>
             </div>
 
         </div>
@@ -44,4 +51,4 @@ const navBar = () => {
   )
 }
 
-export default navBar
+export default NavBar

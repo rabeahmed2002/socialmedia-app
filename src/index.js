@@ -11,16 +11,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-// import { AuthContextProvider } from "./context/authContext";
+import { AuthContextProvider } from "./Context/authContext";
 // import { DarkModeContextProvider } from "./context/darkModeContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <DarkModeContextProvider>
-      <AuthContextProvider> */}
+      <AuthContextProvider>
         <App />
-      {/* </AuthContextProvider>
-    </DarkModeContextProvider> */}
+      </AuthContextProvider>
   </React.StrictMode>
 );
