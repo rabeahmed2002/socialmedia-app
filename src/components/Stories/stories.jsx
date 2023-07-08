@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import './stories.scss'
 
-import { AuthContext } from "../../Context/authContext.js"
+import { AuthContext } from "../../Context/authContext"
 
 
-const stories = () => {
+const Stories = () => {
 
     const {currentUser}=useContext(AuthContext)
 
@@ -50,4 +50,4 @@ const stories = () => {
   )
 }
 
-export default stories
+export default Stories

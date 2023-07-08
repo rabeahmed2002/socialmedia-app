@@ -10,7 +10,7 @@ const home = () => {
   return (
     <div className='home'>
       <Stories/>
-      <Posts/>
+      {/* <Posts/> */}
 
     </div>
   )

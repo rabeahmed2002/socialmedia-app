@@ -13,7 +13,7 @@ export const AuthContextProvider = ({ children }) => {
       id: 1,
       name: "John Doe",
       profilePic:
-        "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://i.postimg.cc/VstndRgb/IMG-20230413-170805-149.jpg",
     });
   };
 

@@ -16,11 +16,13 @@ import {
 } from "react-router-dom";
 
 import * as reactRouterDom from 'react-router-dom'
+import { AuthContext } from "./Context/authContext";
+import { useContext } from 'react'
 
 
 function App() {
 
-  const currentUser=true;
+  const {currentUser}=useContext(AuthContext)
 
   const Layout=()=>{
     return(
