@@ -78,10 +78,7 @@ function App() {
 
   return (
     <div className="App">
-
-      <reactRouterDom.RouterProvider router={router}/>
-
-      
+      <reactRouterDom.RouterProvider router={router}/>      
     </div>
   );
 }

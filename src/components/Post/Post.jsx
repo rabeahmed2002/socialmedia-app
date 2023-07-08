@@ -9,6 +9,9 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Post = ({post}) => {
+
+  const liked=false
+
   return (
     <div className='post'>
       <div className='user'>
@@ -24,8 +27,16 @@ const Post = ({post}) => {
         <MoreHorizIcon/>
         
       </div>
-      <div className='content'></div>
-      <div className='info'></div>
+      <div className='content'>
+        <p>{post.desc}</p>
+        <img src={post.img} />
+      </div>
+
+      <div className='info'>
+        <div className="item">
+          {liked ? <FavoriteBorderOutlinedIcon/> : <FavoriteOutlinedIcon/>}
+        </div>
+      </div>
     </div>
   )
 }
