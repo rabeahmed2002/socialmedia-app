@@ -1,4 +1,4 @@
-import "./navbar.scss";
+import "./navbar.scss"
 import React, { useContext } from 'react'
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Context/authContext";
@@ -27,7 +27,7 @@ const NavBar = () => {
                 <span>ShadowNetwork</span>
             </Link>
             <HomeOutlinedIcon/>
-            <DarkModeOutlinedIcon/>
+            {/* <DarkModeOutlinedIcon/> */}
             <AppsOutlinedIcon/>
 
             <div className='search'>
