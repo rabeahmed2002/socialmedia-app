@@ -20,7 +20,7 @@ const Profile = () => {
           className="cover"
         />
         <img
-          src="https://images.pexels.com/photos/14028501/pexels-photo-14028501.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          src="https://i.postimg.cc/VstndRgb/IMG-20230413-170805-149.jpg"
           alt=""
           className="profilePic"
         />

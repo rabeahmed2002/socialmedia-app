@@ -41,10 +41,10 @@ const NavBar = () => {
             <NotificationsNoneOutlinedIcon/>
 
             <div className='user'>
-                {/* <img src='https://i.postimg.cc/VstndRgb/IMG-20230413-170805-149.jpg'/>
+                <img src='https://i.postimg.cc/VstndRgb/IMG-20230413-170805-149.jpg'/>
+                <span>Rabe Ahmed</span>
+                {/* <img src={currentUser.profilePic}/>
                 <span>{currentUser.name}</span> */}
-                <img src={currentUser.profilePic}/>
-                <span>{currentUser.name}</span>
             </div>
 
         </div>

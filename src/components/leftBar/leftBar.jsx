@@ -28,8 +28,10 @@ const LeftBar = () => {
         <div className='container'>
           <div className='menu'>
             <div className='user'>
-              <img src={currentUser.profilePic}/>
-              <span>{currentUser.name}</span>
+              <img src='https://i.postimg.cc/VstndRgb/IMG-20230413-170805-149.jpg'/>
+              <span>Rabe Ahmed</span>
+              {/* <img src={currentUser.profilePic}/>
+              <span>{currentUser.name}</span> */}
             </div>
 
             <div className='item'>
