@@ -14,22 +14,22 @@ const Stories = () => {
     {
       id: 1,
       name: "Rabe Ahmed",
-      img: "https://images.pexels.com/photos/13916254/pexels-photo-13916254.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      img: "https://i.postimg.cc/6687L7Lj/IMG-20230621-WA0105.jpg",
     },
     {
       id: 2,
       name: "Rabe Ahmed",
-      img: "https://images.pexels.com/photos/13916254/pexels-photo-13916254.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      img: "https://i.postimg.cc/6687L7Lj/IMG-20230621-WA0105.jpg",
     },
     {
       id: 3,
       name: "Rabe Ahmed",
-      img: "https://images.pexels.com/photos/13916254/pexels-photo-13916254.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      img: "https://i.postimg.cc/6687L7Lj/IMG-20230621-WA0105.jpg",
     },
     {
       id: 4,
       name: "Rabe Ahmed",
-      img: "https://images.pexels.com/photos/13916254/pexels-photo-13916254.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      img: "https://i.postimg.cc/6687L7Lj/IMG-20230621-WA0105.jpg",
     },
   ];
 

@@ -11,7 +11,7 @@ const Posts = () => {
       profilePic:
         "https://i.postimg.cc/VstndRgb/IMG-20230413-170805-149.jpg",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      img: "https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      img: "https://i.postimg.cc/P5gKTsfh/20230624-221844.jpg",
     },
     {
       id: 2,
