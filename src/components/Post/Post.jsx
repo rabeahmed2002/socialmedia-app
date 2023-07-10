@@ -14,9 +14,10 @@ const Post = ({post}) => {
 
   return (
     <div className='post'>
+      <div className="container">
       <div className='user'>
         <div className="userInfo">
-          <img src={post.img}/>
+          <img src={post.profilePic}/>
           <div className="details">
             <Link to={`/profile/${post.userID}`} style={{textDecoration:"none", color:"inherit"}}>
               <span>{post.name}</span>
@@ -37,8 +38,11 @@ const Post = ({post}) => {
           {liked ? <FavoriteBorderOutlinedIcon/> : <FavoriteOutlinedIcon/>}
         </div>
       </div>
+      </div>
+
     </div>
   )
 }
 
 export default Post
+
